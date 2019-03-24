@@ -1,4 +1,4 @@
-(ns quil-site.examples.colorjoy
+(ns colours.core
   (:require [quil.core :as q :include-macros true]))
 
 ;;;
@@ -21,8 +21,9 @@
         (q/stroke (mod (+ i F) 1.0) sat bri)
         (q/line x margin x (- (q/height) margin))))))
 
-(q/defsketch colorjoy
-  :host "host"
-  :size [500 500]
-  :setup setup
-  :draw draw)
+(comment
+  (q/defsketch colorjoy
+    :host "host"
+    :size [600 600]
+    :setup setup
+    :draw draw))

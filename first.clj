@@ -10,3 +10,7 @@
 (def good_spellings2 (clojure.string/replace good_spellings "windowooows" "windows"))
 
 (clojure.string/replace good_spellings2 "si" "is")
+
+(+ 1 1)
+
+(println (+ 1 1))

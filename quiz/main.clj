@@ -1,5 +1,9 @@
-(prn "Hello!")
+(println "Hi!")
 
-(prn "I am going to test your maths!!!!!!!!!!")
+(println "I am going to test your maths!!!!!!!!!!")
+
+(newline)
 
 (load-file "quiz.clj")
+
+;;Hello!

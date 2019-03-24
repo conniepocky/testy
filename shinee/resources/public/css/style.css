@@ -1,0 +1,11 @@
+/* some style */
+
+body {
+	font-family: sans-serif;
+	color: black;
+	background-color: #40E0D0;
+}
+
+.heading {
+	text-align: center;
+}
