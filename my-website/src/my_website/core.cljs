@@ -10,8 +10,8 @@
                                    
 (defn website-title []
    [:div {:class "jumbotron centered-text"}
-    [:h1 "ProgrammingIsAmazing!"]
-    [:h3 [:i "A channel for gaming and programming"]]])
+    [:h1 "Hello!"]
+    [:h3 [:i "Welcome to my website :D"]]])
    
    
 (defn about-cards [title text image link]
@@ -31,12 +31,25 @@
 (defn hello-world []
   [:div
    [website-title]
-   [:h1 {:class "centered-text"} "Links"]
+
+   ;; Projects
+
+   [:h1 {:class "centered-text"} "My Projects"]
+
+   [:div {:class "row"} 
+    [:div {:class "col-md-3"}
+      [about-cards "K-Dash" "" " " "https://conniepocky.github.io/k-dash"]]]
+
+   ;; Youtube/Twitch
+   [:h1 {:class "centered-text"} "Where you can find me!"]
    [:div {:class "row"}
-     [:div {:class "col-md-3"}
-      [about-cards "Clojure" "Clojure is my favourite programming language and is also the language I used to make this website!" "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/200px-Clojure_logo.svg.png" "https://clojure.org/"]]
+
      [:div {:class "col-md-3"}
       [about-cards "My YouTube" "" "https://media.licdn.com/dms/image/C560BAQFWOfDVm7nHeg/company-logo_200_200/0?e=2159024400&v=beta&t=L7yzPfsyYeZUjkJc1Abfwbg-Nx710fAvwEYbf02LIEE" "https://www.youtube.com/channel/UCmdaAi8utcD7y951MfyhSbQ/featured?view_as=subscriber"]]
+     
+     [:div {:class "col-md-3"}
+      [about-cards "My Codepen" "" "https://mainframe.ghost.io/content/images/2018/09/codepen.png" "https://codepen.io/waffles19/"]]
+
      [:div {:class "col-md-3"}
       [about-cards "My Twitch" "" "https://www-cdn.jtvnw.net/images/twitch_logo3.jpg" "https://www.twitch.tv/waffles193"]]]
    [:p {:class "centered-text"} "Made by Connie"]])
